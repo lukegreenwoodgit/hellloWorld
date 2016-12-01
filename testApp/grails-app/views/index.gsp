@@ -1,77 +1,23 @@
 <!doctype html>
 <html>
-<head>
-    <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+<head>  
+    <title>Welcome to myApp</title>
 
-    <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
 </head>
 <body>
     <content tag="nav">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-                <li><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-                <li><a href="#">App version:
-                    <g:meta name="info.app.version"/></a>
-                </li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Grails version:
-                    <g:meta name="info.app.grailsVersion"/></a>
-                </li>
-                <li><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-                <li><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-                <li><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-                <li><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-                <li><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li><a href="#">${plugin.name} - ${plugin.version}</a></li>
-                </g:each>
-            </ul>
-        </li>
+        <a href="http://shu.ac.uk">SHU Homepage</a>
     </content>
-
-    <div class="svg" role="presentation">
-        <div class="grails-logo-container">
-            <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-        </div>
-    </div>
 
     <div id="content" role="main">
         <section class="row colset-2-its">
-            <h1>Welcome to Grails</h1>
-
-            <p>
-                Congratulations, you have successfully started your first Grails application! At the moment
-                this is the default page, feel free to modify it to either redirect to a controller or display
-                whatever content you may choose. Below is a list of controllers that are currently deployed in
-                this application, click on each to execute its default action:
-            </p>
-
-            <div id="controllers" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller">
-                            <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                        </li>
-                    </g:each>
-                </ul>
-            </div>
+            <h1>System Architectures</h1>
+<h3>Section 1</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et dui vitae risus malesuada condimentum ac sed nibh. Integer tempus nibh nunc. Phasellus molestie, arcu quis ullamcorper placerat, nisi ante lacinia massa, quis bibendum velit neque non lacus. Morbi molestie ipsum eget faucibus ullamcorper. Vivamus ut iaculis diam. Donec libero ligula, feugiat et consectetur ac, rutrum ut libero. Integer vulputate, augue et efficitur interdum, nunc dolor fermentum velit, non tristique mi mi id leo. Sed pretium odio nec metus convallis tristique. Integer eu elementum enim.</p>
+<h3>Section 2</h3>
+<p>Integer a eros tincidunt, aliquet nisl vitae, iaculis ligula. Cras nisi metus, malesuada id sodales eget, venenatis quis turpis. Sed malesuada arcu et tincidunt elementum. Vivamus vel sapien sit amet nisi luctus faucibus. Praesent erat enim, mollis quis ligula condimentum, rhoncus facilisis ligula. Sed vel lorem sapien. Quisque placerat ut quam nec volutpat. Aenean sed lacus nisi. Morbi tristique quam non tincidunt euismod. Quisque eu nisl neque. Curabitur ultricies pretium ex, quis sagittis nibh fringilla id.</p>
+<h3>Section 3</h3>
+<p>Phasellus varius fermentum massa, quis tempor magna mattis non. Mauris porta tristique pretium. Maecenas justo risus, commodo at velit vitae, efficitur euismod nibh. Ut vestibulum velit sed lectus elementum, ac laoreet dolor condimentum. Maecenas quis blandit odio. Donec malesuada sed orci eget dignissim. In sed lectus eros. Vestibulum lacus ante, porttitor nec tincidunt vel, tristique vel sapien. Aliquam cursus vitae tellus et vestibulum. Duis sed velit convallis, ultrices velit vel, elementum augue. Quisque sit amet rhoncus ante, non aliquet nulla. Pellentesque interdum, leo in tincidunt pulvinar, magna diam congue sapien, eu convallis orci arcu vitae risus. Morbi convallis aliquet massa eu aliquam. Cras consequat eget nulla non eleifend. Donec gravida dictum urna ut accumsan. Nam lacinia efficitur molestie.</p>
         </section>
     </div>
 
