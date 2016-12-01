@@ -2,7 +2,10 @@
 <html>
 <head>  
     <title>Welcome to myApp</title>
-
+    <style>
+	body { background-color: #EEE; }
+	h1, h3, p { font-family: arial, sans-serif; color: #222; }
+    </style>
 </head>
 <body>
     <content tag="nav">
